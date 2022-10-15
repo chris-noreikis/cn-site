@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { SocialIcon } from 'react-social-icons';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -10,6 +11,12 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1 className="main-heading">
         <Link to="/">{title}</Link>
+          <div class={'social-group'}>
+              <SocialIcon url="https://www.linkedin.com/in/chris-noreikis-b98a4658/" />
+              <SocialIcon url="https://github.com/chris-noreikis" />
+              <SocialIcon url="https://www.facebook.com/chris.noreikis" />
+              <SocialIcon url="https://twitter.com/CNoreikis" />
+          </div>
       </h1>
     )
   } else {
