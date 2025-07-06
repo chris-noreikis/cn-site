@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: 'Merriweather', serif;
+    background-color: #1a202c;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .main-heading {
+    @apply text-4xl font-bold text-heading dark:text-heading-dark mb-8;
+  }
+
+  .social-group {
+    @apply flex gap-2 mt-4;
+  }
+
+  .global-wrapper {
+    @apply w-full px-6 py-8;
+  }
+
+  .global-header {
+    @apply mb-12;
+  }
+
+  .header-link-home {
+    @apply text-2xl font-bold text-primary dark:text-primary-dark no-underline;
+  }
+
+  .post-list-item {
+    @apply mb-8 p-6 border border-accent dark:border-accent-dark rounded-lg;
+  }
+}
